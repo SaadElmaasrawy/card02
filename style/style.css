@@ -1,0 +1,143 @@
+/* Start Of Global Rules */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    background-color: hsl(273, 75%, 66%);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+/* End Of Global Rules */
+
+/* Start Of Con */
+
+.con {
+    width: 60%;
+    height: auto;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    left: 50%;
+    margin-left: -30%;
+    top: 130px;
+    display: flex;
+}
+
+/* End Of Con*/
+
+/* Start Of Left Side */
+
+.left{
+    width: 40%;
+    overflow: visible;
+}
+.left img {
+    position: relative;
+    width: 500px;
+    left: -100px;
+    top: 10px;
+}
+/* End Of Left Side */
+
+/* Start Of Right Side */
+
+.right {
+    width: 60%;
+    margin: 80px 80px 80px 80px ;
+    color: hsl(238, 29%, 16%);
+}
+
+.right h1 {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.q {
+    position: relative;
+    height: 30px;
+    font-size: 14px;
+    font-weight: 400px;
+    color: hsl(238, 29%, 16%);
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+.q p span {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+.q:hover{
+    color: hsl(14, 88%, 65%);
+}
+
+hr {
+    opacity: 60%;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+
+.s {
+    margin-bottom: 5px;
+    margin-top: -10px;
+}
+
+/* End Of Right Side */
+
+/* js */
+
+.active{
+    height: auto;
+}
+.head-active {
+    font-weight: 700;
+}
+
+/* js */
+
+
+/* Start Of Responsive */
+
+@media only screen and (max-width: 600px) {
+    .con{
+        flex-direction: column;
+        height: auto;
+        top: 110px;
+        margin-bottom: 20px;
+        
+        padding: 0;
+    }
+    .left img{
+        width: 400px;
+        position: relative;
+        top: -100px;
+        left: -50px;
+        margin: auto;
+    }
+
+    .right{
+        margin: 0;
+        margin: 0 30px 0 30px;
+        width: 75%;
+        position: relative;
+        top: -50px;
+    }
+    hr {
+        margin-bottom: 20px;
+    }
+    .q{
+        margin-bottom: 5px;
+    }
+}
+
+/* End Of Responsive */
